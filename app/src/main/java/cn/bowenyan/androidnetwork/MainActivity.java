@@ -32,4 +32,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
+
+    public void Open_Network(View view){
+        Intent intent = new Intent();
+        intent.setClass(this,Network.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
 }
